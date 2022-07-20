@@ -1,0 +1,23 @@
+Simulation data vector used in Joachimi (2017), MNRAS, 466, 83
+
+The files are of the form
+
+xi_athena_final_shrinkage_lognormal_2zbin_shapenoise_0[i]_0[j]_[k].dat
+
+where
+
+i,j in [1,2]  and i<=j
+
+and
+
+k in [0001;2000]
+
+i,j denote the unique combination of redshift bins (3 combinations in this case). k runs over the noise realisation of the data vector.
+
+The data vector for any given realisation can be assembled as follows:
+1. In each file extract the 2nd (xi_+) and 3rd (xi_-) columns and concatenate. Two correlation functions a 20 angular bin measurements -> size 40.
+2. Then concatenate the vectors from (1.) for different redshift bins in the order 01_01, 01_02, 02_02. 3 vectors a 40 elements -> size 120.
+
+
+When using this data please cite the reference given above and refer to their Section 4 for details on the simulations and measurements done on them.
+
