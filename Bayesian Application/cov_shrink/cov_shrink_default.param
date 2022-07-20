@@ -1,0 +1,9 @@
+# This is the input parameter file for cov_shrink.c
+./            # path to files
+-             # file name of input data ('-' if using internally generated iid unit Gaussians)
+test          # output file identifier
+20            # dimension of input data vector
+100           # number of realisations of input data vector
+5             # number of split locations to test
+50            # number of samples to average over
+-	      # file with normalisation vector ('-' for unit normalisation)
