@@ -1071,7 +1071,7 @@ int main(int argc, const char * argv[]) {
 
     
     //Import Data Matrix
-    FILE *fdata =  fopen("/home/s2110992/Documents/GitHub/C_code/Smaller_test/Data.txt", "ro");
+    FILE *fdata =  fopen("DIRECTORY_PATH/Data.txt", "ro");
 
     double data[d][m];
 
@@ -1088,7 +1088,7 @@ int main(int argc, const char * argv[]) {
     
     fclose(fdata);
 
-    FILE *fmean =  fopen("/home/s2110992/Documents/GitHub/C_code/Smaller_test/mean.txt", "ro");
+    FILE *fmean =  fopen("DIRECTORY_PATH/mean.txt", "ro");
 
 
     //import mean vector
@@ -1109,7 +1109,7 @@ int main(int argc, const char * argv[]) {
 
     //import initial vec
 
-    FILE *fq =  fopen("/home/s2110992/Documents/GitHub/C_code/Smaller_test/initial_vec.txt", "ro");
+    FILE *fq =  fopen("DIRECTORY_PATH/initial_vec.txt", "ro");
 
     for(i = 0; i < n; i++) {
         
