@@ -9,7 +9,7 @@ The RMHMC_Bayesian.c and RT-RMHMC_Bayesian.c are set up for the IAC estimation f
 Before compiling the code, one needs to insert their directory path into the RT-RMHMC_Bayesian.c and RMHMC_Bayesian.c files for importing the data. This is in place of "xxxxxx".
 
 To run the C code you first need to compile by running
-gcc Filenmae.c normal.c -lm -O3 -o out
+gcc Filename.c normal.c -lm -O3 -o out
 
 To print the results to a file and run the code you can use
 ./out > dat.txt
