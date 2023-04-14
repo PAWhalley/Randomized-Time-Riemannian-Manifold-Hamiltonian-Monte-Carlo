@@ -1060,7 +1060,7 @@ int main(int argc, const char * argv[]) {
 
     
     //Import Data Matrix
-    FILE *fdata =  fopen("./Data.txt", "ro");
+    FILE *fdata =  fopen("xxxxxx/Data.txt", "ro");
 
     double data[d][m];
 
@@ -1077,7 +1077,7 @@ int main(int argc, const char * argv[]) {
     
     fclose(fdata);
 
-    FILE *fmean =  fopen("./mean.txt", "ro");
+    FILE *fmean =  fopen("xxxxxx/mean.txt", "ro");
 
 
     //import mean vector
@@ -1098,7 +1098,7 @@ int main(int argc, const char * argv[]) {
 
     //import initial vec
 
-    FILE *fq =  fopen("./initial_vec.txt", "ro");
+    FILE *fq =  fopen("xxxxxx/initial_vec.txt", "ro");
 
     for(i = 0; i < n; i++) {
         
