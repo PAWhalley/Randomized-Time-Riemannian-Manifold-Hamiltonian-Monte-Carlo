@@ -20,7 +20,7 @@
 #define m                       40               //number of data points
 #define n                       185              //d*p + p + d  // dimension
 #define dt_max                  0.001            // stepsize
-#define number_of_samples       10000          //100000// final (real) time
+#define number_of_samples       10000          // number of samples
 #define burn                    0
 #define M                       200            //2000// number_of_samples // 50
 #define printskip               0               // skipping for printing
@@ -1071,7 +1071,7 @@ int main(int argc, const char * argv[]) {
 
     
     //Import Data Matrix
-    FILE *fdata =  fopen("xxxxxx/Data.txt", "ro");
+    FILE *fdata =  fopen("./Data.txt", "ro");
 
     double data[d][m];
 
@@ -1088,7 +1088,7 @@ int main(int argc, const char * argv[]) {
     
     fclose(fdata);
 
-    FILE *fmean =  fopen("xxxxxx/mean.txt", "ro");
+    FILE *fmean =  fopen("./mean.txt", "ro");
 
 
     //import mean vector
@@ -1109,7 +1109,7 @@ int main(int argc, const char * argv[]) {
 
     //import initial vec
 
-    FILE *fq =  fopen("xxxxxx/initial_vec.txt", "ro");
+    FILE *fq =  fopen("./initial_vec.txt", "ro");
 
     for(i = 0; i < n; i++) {
         
